@@ -13,9 +13,9 @@ function resetDivision() {
 }
 
 // FACTORIAL !  FUNCTION
-var num = document.querySelector('#userInput');
-//this is for the total
-function getFactorial() {
+
+function getFactorial(num) {
+  var num = document.querySelector('#userInput');
   var result = 1;
   for (var i = num; i > 0; i--) {
     result = result * i;
@@ -24,7 +24,7 @@ function getFactorial() {
 }
 
 //EXERCISES
-
+/**
 var exercises = [
     { 
         question: "How many unique ways are there to arrange the letters in the word PRIOR?",
@@ -55,7 +55,7 @@ var exercises = [
     }];
     
 
-    
+  **/  
 
 
 
@@ -82,13 +82,13 @@ function permutationRep(userInput){
 
 
 
-function getFactorial(num) {
+/**function getFactorial(num) {
   var result = 1;
   for (var i = num; i > 0; i--) {
     result = result * i;
   }
-  return result;
-}
+  return result;**/
+
 function getPermutation(howMany, subSet) {
   var result = getFactorial(howMany);
 
